@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Hernandez | Software Engineer</title>
+  <meta name="description" content="Personal portfolio of Carlos Hernandez, a passionate Software Engineer specializing in scalable web applications and elegant solutions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <nav id="main-nav" class="glass-nav">
+    <div class="nav-container">
+      <a href="#hero" id="nav-logo" class="logo">CH.</a>
+      <ul class="nav-links">
+        <li><a href="#about" id="nav-about">About</a></li>
+        <li><a href="#skills" id="nav-skills">Skills</a></li>
+        <li><a href="#projects" id="nav-projects">Projects</a></li>
+        <li><a href="#experience" id="nav-experience">Experience</a></li>
+        <li><a href="#contact" id="nav-contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="hero-content fade-in">
+        <h1 class="hero-title">Carlos Hernandez</h1>
+        <p class="hero-tagline">Software Engineer &middot; Crafting elegant digital experiences</p>
+        <div class="social-links">
+          <a href="https://github.com/carloshernandez201" target="_blank" rel="noopener" id="hero-github" class="btn-social">GitHub</a>
+          <a href="https://www.linkedin.com/in/carlos-hernandez2" target="_blank" rel="noopener" id="hero-linkedin" class="btn-social">LinkedIn</a>
+          <a href="mailto:carlosl.hernandezbrn@gmail.com" id="hero-email" class="btn-primary">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="about section">
+      <div class="container fade-in">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content glass-card">
+          <img src="assets/profile.jpg" alt="Carlos Hernandez" class="avatar-circle" style="object-fit: cover;">
+          <div class="about-text">
+            <p>Hi, I'm Carlos. I am a software engineer passionate about creating scalable, user-centric web applications. Originally from Venezuela, I moved to Orlando, Florida. I bring a diverse and driven perspective to everything I build.</p>
+            <p>When I'm not coding, you can find me playing soccer or basketball. I have also worked as a Resident Assistant (RA), which helped me develop strong leadership and community-building skills.</p>
+            <img src="assets/skiing.jpg" alt="Skiing" style="width: 100%; max-width: 350px; border-radius: 12px; margin-top: 1.5rem; border: 1px solid rgba(255,255,255,0.1);">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <h2 class="section-title fade-in">Skills & Tech Stack</h2>
+        <div class="skills-grid">
+          <div class="skill-card glass-card fade-in" id="skill-python">
+            <span class="skill-icon">🐍</span>
+            <span class="skill-name">Python</span>
+          </div>
+          <div class="skill-card glass-card fade-in" id="skill-js">
+            <span class="skill-icon">🟨</span>
+            <span class="skill-name">JavaScript</span>
+          </div>
+          <div class="skill-card glass-card fade-in" id="skill-go">
+            <span class="skill-icon">🐹</span>
+            <span class="skill-name">Go</span>
+          </div>
+          <div class="skill-card glass-card fade-in" id="skill-sql">
+            <span class="skill-icon">🗄️</span>
+            <span class="skill-name">SQL</span>
+          </div>
+          <div class="skill-card glass-card fade-in" id="skill-react">
+            <span class="skill-icon">⚛️</span>
+            <span class="skill-name">React</span>
+          </div>
+          <div class="skill-card glass-card fade-in" id="skill-html">
+            <span class="skill-icon">🌐</span>
+            <span class="skill-name">HTML/CSS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <h2 class="section-title fade-in">Featured Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card glass-card fade-in" id="proj-live-tracker">
+            <div class="project-content">
+              <h3 class="project-title">Live Sports Tracker</h3>
+              <p class="project-desc">A real-time dashboard displaying trending sports viewership data. Implemented with dynamic fetching and a responsive glassmorphism UI.</p>
+              <div class="tech-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">API</span>
+                <span class="tag">CSS</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="#" id="link-live-tracker-demo" class="project-link">Live Demo</a>
+              <a href="#" id="link-live-tracker-code" class="project-link">Source Code</a>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="project-card glass-card fade-in" id="proj-snake">
+            <div class="project-content">
+              <h3 class="project-title">Interactive Snake Game</h3>
+              <p class="project-desc">A polished, modern implementation of the classic Snake game featuring smooth animations, score tracking, and custom design tokens.</p>
+              <div class="tech-tags">
+                <span class="tag">HTML5 Canvas</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="#" id="link-snake-demo" class="project-link">Play Game</a>
+              <a href="#" id="link-snake-code" class="project-link">Source Code</a>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="project-card glass-card fade-in" id="proj-portfolio">
+            <div class="project-content">
+              <h3 class="project-title">Personal Portfolio</h3>
+              <p class="project-desc">The site you are currently browsing. Built from scratch without frameworks to showcase performance, accessibility, and modern CSS techniques.</p>
+              <div class="tech-tags">
+                <span class="tag">Vanilla JS</span>
+                <span class="tag">CSS Variables</span>
+                <span class="tag">Intersection Observer</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="#" id="link-portfolio-code" class="project-link">Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience / Education -->
+    <section id="experience" class="experience section">
+      <div class="container">
+        <h2 class="section-title fade-in">Experience & Education</h2>
+        <div class="timeline">
+          <div class="timeline-item fade-in" id="exp-ra">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <h3 class="timeline-title">Resident Assistant (RA) <span class="timeline-company">@ University of Florida</span></h3>
+              <span class="timeline-date">Recent</span>
+              <p>Fostered a positive community environment, provided mentorship and conflict resolution, and organized community events for residents.</p>
+            </div>
+          </div>
+          <div class="timeline-item fade-in" id="exp-projects">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <h3 class="timeline-title">Software Engineer <span class="timeline-company">@ Personal & Open Source</span></h3>
+              <span class="timeline-date">Ongoing</span>
+              <p>Building full-stack projects focusing on Machine Learning, Backend systems, and Finance (e.g., Mutual Fund Investment Predictor, Algorithmic Pathfinder Simulations).</p>
+            </div>
+          </div>
+          <div class="timeline-item fade-in" id="edu-university">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <h3 class="timeline-title">Computer Science <span class="timeline-company">@ University of Florida</span></h3>
+              <span class="timeline-date">Current</span>
+              <p>Passionate about software development, actively engaging in various full-stack technologies and participating in learning labs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact section">
+      <div class="container fade-in">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-wrapper glass-card">
+          <div class="contact-info">
+            <p>I'm currently open for new opportunities. Whether you have a question, a project proposal, or just want to say hi, I'll try my best to get back to you!</p>
+            <div class="contact-methods">
+              <a href="mailto:carlosl.hernandezbrn@gmail.com" id="contact-email-link" class="contact-method">
+                <span class="contact-icon">✉️</span> carlosl.hernandezbrn@gmail.com
+              </a>
+              <a href="https://www.linkedin.com/in/carlos-hernandez2" target="_blank" rel="noopener" id="contact-linkedin-link" class="contact-method">
+                <span class="contact-icon">💼</span> LinkedIn
+              </a>
+            </div>
+          </div>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="form-name">Name</label>
+              <input type="text" id="form-name" required placeholder="John Doe">
+            </div>
+            <div class="form-group">
+              <label for="form-email">Email</label>
+              <input type="email" id="form-email" required placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" rows="5" required placeholder="Your message here..."></textarea>
+            </div>
+            <button type="submit" id="submit-contact" class="btn-primary form-submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Carlos Hernandez. Built from scratch with ❤️</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
