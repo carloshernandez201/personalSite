@@ -43,32 +43,35 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Handle contact form submission (demo mode)
+  // Handle contact form submission
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
       
+      const name = document.getElementById('form-name').value;
+      const email = document.getElementById('form-email').value;
+      const message = document.getElementById('form-message').value;
+      
+      const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+      
+      // Open default mail client
+      window.location.href = `mailto:carlosl.hernandezbrn@gmail.com?subject=${subject}&body=${body}`;
+      
       const btn = document.getElementById('submit-contact');
       const originalText = btn.textContent;
       
-      btn.textContent = 'Sending...';
+      btn.textContent = 'Opening Mail Client...';
       btn.disabled = true;
       btn.style.opacity = '0.7';
 
-      // Simulate network request
       setTimeout(() => {
-        btn.textContent = 'Message Sent!';
-        btn.style.background = '#10b981'; // Success green
+        btn.textContent = originalText;
+        btn.disabled = false;
+        btn.style.opacity = '1';
         contactForm.reset();
-        
-        setTimeout(() => {
-          btn.textContent = originalText;
-          btn.disabled = false;
-          btn.style.opacity = '1';
-          btn.style.background = ''; // Revert to default CSS
-        }, 3000);
-      }, 1500);
+      }, 3000);
     });
   }
 });
